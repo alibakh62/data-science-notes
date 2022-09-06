@@ -33,27 +33,35 @@ export default function Layout({ children, home }) {
         />
       </Head>
       <Navbar />
-      {/* <header className={styles.header}>
+      <header className={styles.header}>
         {home ? (
           <>
             <Image
               priority
               src="/images/profile.png"
-              className={utilStyles.borderCircle}
+              className={utilStyles.profileImage}
               height={144}
               width={144}
               alt={name}
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <p className={styles.intro}>
+              Hi, I'm <strong>Ali</strong>. I'm a data scientist and a tennis
+              fanatic. I'm currently working as a data scientist at{" "}
+              <a href="7-eleven.com">7-Elven</a>.
+            </p>
+            <p>
+              Check out my data science notes at <a href="/notes">Notes</a>.
+            </p>
           </>
         ) : (
           <>
-            <Link href="/">
+            {/* <Link href="/">
               <a>
                 <Image
                   priority
                   src="/images/profile.png"
-                  className={utilStyles.borderCircle}
+                  className={utilStyles.profileImage}
                   height={100}
                   width={100}
                   alt={name}
@@ -64,10 +72,10 @@ export default function Layout({ children, home }) {
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{name}</a>
               </Link>
-            </h2>
+            </h2> */}
           </>
         )}
-      </header> */}
+      </header>
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>

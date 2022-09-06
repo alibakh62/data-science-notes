@@ -21,8 +21,12 @@
 }
 
 .headingMd {
+  flex: column;
   font-size: 1.2rem;
   line-height: 1.5;
+  margin: 1rem 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .borderCircle {
@@ -49,4 +53,10 @@
 
 .lightText {
   color: #666;
+}
+
+.profileImage {
+  width: 144px;
+  height: 144px;
+  border-radius: 9999px;
 }

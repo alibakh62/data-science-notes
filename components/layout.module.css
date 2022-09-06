@@ -8,7 +8,9 @@
 .header {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin: 5rem 0 0;
 }
 
 .backToHome {
@@ -24,6 +26,11 @@
   text-decoration: none;
   color: #0070f3;
   /* width: 50%; */
+}
+
+.intro {
+  width: 50%;
+  margin: 2rem auto;
 }
 
 /* .font-link {

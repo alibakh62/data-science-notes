@@ -17,13 +17,13 @@ export default function Navbar() {
         <h1 className={styles.h1}>My Data Science Notes</h1>
         <ul className={styles.ul}>
           <li className={styles.li}>
-            <Link href="/topics/statquest">
+            <Link href="/">
               <a className={styles.a}>Home</a>
             </Link>
           </li>
           <li className={styles.li}>
-            <Link href="/topics/udacity">
-              <a className={styles.a}>About Me</a>
+            <Link href="/notes">
+              <a className={styles.a}>Data Science Notes</a>
             </Link>
           </li>
           <li className={styles.li}>
